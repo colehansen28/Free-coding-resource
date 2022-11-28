@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: serif;
+}
+
+body{
+    height: 100vh;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+
+/*-------Main-------*/
+
+main{
+    text-align: center;
+    display: grid;
+}
+
+/*-------nav-bar-------*/
+
+
+.nav-bar{
+    padding: .25em 1em;
+}
+
+.nav-bar a{
+    text-decoration: none;
+color: black;
+}
+
+.nav-bar h1{
+    float: left;
+}
+
+.nav-bar h1:hover{
+    color:rgb(14, 5, 194);
+    translate: 1px 1px;
+
+}
+
+.nav-bar nav{
+    float: right;
+    display: flex;
+    gap: 1em
+}
+
+.nav-bar nav a:hover{
+    text-decoration: none;
+    color: rgb(14, 5, 194);
+    translate: 1px 1px;
+}
+
+
+/*-------Header-------*/
+
+.header{
+    background-image: url("Images/Background.webp");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 30%;
+    min-width: 200px;
+    max-width: 350px;
+    display: grid;
+    gap: 2em;
+    padding: 1em;
+    border: solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+.header #image{
+    width: 100%;
+
+}
+
+.header #image img{
+    width: 50%;
+    border-radius: 120px;
+}
+
+.header header h1,h2{
+    font-size: 2.5em;
+}
+
+
+/*-------Guides-------*/
+
+.Guides{
+    display: Grid;
+    justify-content: center;
+    align-items: center;
+    background:  radial-gradient(ellipse at bottom, rgb(100,192,216) 35%, rgb(0,100,174));;
+}
+
+.Guides .image{
+}
+
+.Guides img{
+    border-radius: 100px;
+}
+
+.Guides h1{
+    font-size: 2em;
+}
+
+/*-------w3-schools-------*/
+.w3-school{
+    display: grid;
+    justify-content: center;
+    padding: 1em 3em;
+    gap: 1em
+}
+
+.w3-school .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+@media(max-width: 650px){
+    .w3-school .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.w3-school .content .content-col{
+    max-width: 250px;
+
+}
+
+.w3-school .content .content-col .content-card ion-icon{
+    font-size: larger;
+}
+
+.w3-school .content .content-col .content-card{
+    padding: .5em 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+.w3-school .content .content-col .content-card:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    translate: 5px -5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
